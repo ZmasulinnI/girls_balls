@@ -1,7 +1,7 @@
 #include "Libraries.h"
 #include "Function_Prototypes.h"
 
-void OneDimmenu(int n, double* arr, double* newArr)
+int OneDimmenu(int n, double* arr)
 {
     char actions;
     system("cls");
@@ -29,11 +29,12 @@ void OneDimmenu(int n, double* arr, double* newArr)
             outputconversion(n, arr);
             break;
         case '4':
-            basis1();
+            return 4;
         case '0':
-            return;
+            return 0;
         default:
-            cout << "Вы ввели неверный пункт меню! Попробуйте еще раз." << endl<< endl;
+            cout << "Вы ввели неверный пункт меню! Попробуйте еще раз." << endl << endl;
         }
     }
+    return 0;
 }

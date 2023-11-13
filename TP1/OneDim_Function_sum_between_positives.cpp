@@ -30,8 +30,9 @@ double sum_between_positives(double* arr, int n, int& first_pos, int& last_pos)
         return 0;
     }
 
+
     // Расчет суммы
-    for (int i = first_pos + 1; i < last_pos; i++)
+    for (int i = first_pos + 1; i < last_pos; i++) //!
     {
         sum += arr[i];
     }

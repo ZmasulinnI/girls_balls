@@ -1,7 +1,7 @@
 #include "Libraries.h"
 #include "Function_Prototypes.h"
 
-float** Smoothing_the_matrix(int n, float** matrix, float** smoothedMatrix) //сглаживание матрицы производится здесь 
+void Smoothing_the_matrix(int n, float** matrix, float** smoothedMatrix) //сглаживание матрицы производится здесь 
 {
     for (int i = 0, k = 0; i < n, k < n; i++, k++) //Задание 1 -----  пропишем условия, какие элементы мы берем для сглаживания определененного элемента
     {
@@ -73,5 +73,5 @@ float** Smoothing_the_matrix(int n, float** matrix, float** smoothedMatrix) //сг
         }
     }
 
-    return smoothedMatrix;
+    return;
 }

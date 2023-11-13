@@ -6,7 +6,7 @@ double* enter_Data(int n)
 {
     system("cls");
     cout << "¬ведите элементы одномерного массива:" << endl;
-    
+
     double* arr = new double[n];
     for (int i = 0; i < n; i++)
     {

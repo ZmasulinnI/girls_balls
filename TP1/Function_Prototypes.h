@@ -1,14 +1,13 @@
-#pragma once
+ï»¿#pragma once
 #ifndef FUNCTION_PROTOTYPES
 #define FUNCTION_PROTOTYPES
 #include "Libraries.h"
-
 //Common menu
 int main();
 void mainMenu();
 
 //One Dimention menu
-void OneDimmenu(int n, double* arr, double* newArr);
+int OneDimmenu(int n, double* arr);
 void basis1();
 double initialization(int i);
 
@@ -23,24 +22,23 @@ bool check_conditions_for_sum_between_positives(double* arr, int first_pos, int 
 double* move_zeros_to_end(double* arr, int n);
 bool check_conditions_for_move_zeros_to_end(int nonzero_index, int n, double* arr);
 void outputmax_abs(int n, double* arr);
-double outputsum(int n, double* arr);
+void outputsum(int n, double* arr);
 double* outputconversion(int n, double* arr);
 
 //Two Dimention menu
 float initialization2(int i, int j);
-void TwoDimmenu(float** matrix, float** smoothedMatrix, int n, float sum);
-void Entering_array_elements(bool& allEqual, int n, float** matrix);
+int TwoDimmenu(float** matrix, int n);
+void Entering_array_elements(int n, float** matrix);
 void delete_matrix(float** matrix, int n);
 void basis2();
 int main();
 
 //Two Dimention task
 void Matrix_now(int n, float** matrix);
-void Ñhecking_that_not_zero(int n, float** matrix, bool& allEqual);
-float** Smoothing_the_matrix(int n, float** matrix, float** smoothedMatrix);
-void Output_smoothed_matrix(int n, float** matrix, float** smoothedMatrix);
+void Smoothing_the_matrix(int n, float** matrix, float** smoothedMatrix);
+void Output_smoothed_matrix(int n, float** matrix);
 float Sum_of_modules_below_the_main_diagonal(int n, float** matrix);
-void output_sum_of_modules_below_the_main_diagonal(int n, float sum);
+void output_sum_of_modules_below_the_main_diagonal(int n, float** matrix);
 void checkMatrixConditions_for_sum_of_modules_below_the_main_diagonal(int n);
 
 //ReadFile three task

@@ -7,14 +7,12 @@ int function_count(double* arr, int n)
     int count = 0;
     for (int i = 0; i < n; i++)
     {
-        double abs_value = abs(arr[i]);
-
-        if (abs_value > max_abs)
+        if (abs(arr[i]) > max_abs)
         {
-            max_abs = abs_value;
+            max_abs = abs(arr[i]);
             count = 1;
         }
-        else if (abs_value == max_abs)
+        else if (abs(arr[i]) == max_abs)
         {
             count++;
         }

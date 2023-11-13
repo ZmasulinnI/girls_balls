@@ -13,7 +13,7 @@ double initialization(int i)
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Очистка буфера
             cout << "Неверный ввод. Пожалуйста, введите другое число." << endl << endl
-            << "[" << i + 1 << "]" << " - ";
+                << "[" << i + 1 << "]" << " - ";
         }
         else
         {

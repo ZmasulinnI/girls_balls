@@ -19,7 +19,7 @@ void processSentencesInFile(const char* fileName)
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Очистка буфера
             cout << "Неверный ввод. Пожалуйста, введите действительное положительное целое число." << endl << endl << "Введите количество слов в предложении: ";
         }
-        else if (targetWordCount <= 0) 
+        else if (targetWordCount <= 0)
         {
             cout << "Вы ввели некорректное число. Пожалуйста, введите действительное положительное целое число." << endl << endl << "Введите количество слов в предложении: ";
         }
@@ -39,7 +39,7 @@ void processSentencesInFile(const char* fileName)
     fileContent[fileSize] = '\0';
 
     charactersearchFunction(fileContent, targetWordCount);
-    
+
     inputFile.close();
 
     delete[] fileContent;

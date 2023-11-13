@@ -1,4 +1,6 @@
 #pragma once
+#include <iomanip>
+#include <limits>
 #include <iostream>
 #include <conio.h>
 #include <cstring>

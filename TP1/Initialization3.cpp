@@ -4,7 +4,7 @@
 int initialization3(int targetWordCount, const char* fileName)
 {
     cout << "Введите количество слов в предложении: ";
-    
+
     for (;;)
     {
         cin >> targetWordCount;
@@ -14,7 +14,7 @@ int initialization3(int targetWordCount, const char* fileName)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Очистка буфера
-            cout << "Неверный ввод. Пожалуйста, введите действительное положительное целое число." << endl << endl << "Введите количество слов в предложении: " ;
+            cout << "Неверный ввод. Пожалуйста, введите действительное положительное целое число." << endl << endl << "Введите количество слов в предложении: ";
         }
         else
         {

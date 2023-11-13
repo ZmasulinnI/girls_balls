@@ -1,13 +1,16 @@
 #include "Libraries.h"
 #include "Function_Prototypes.h"
 
-void output_sum_of_modules_below_the_main_diagonal(int n, float sum)
+void output_sum_of_modules_below_the_main_diagonal(int n, float** matrix)
 {
-    //проверка условий
-    checkMatrixConditions_for_sum_of_modules_below_the_main_diagonal(n);
-
-    if (n >= 3)
+    float sum = 0;
+    if (n == 2)
     {
-        cout << "Сумма модулей элементов, расположенных ниже главное диагонали: " << sum << endl;
+        cout << "Матрица состоит из четырех элементов, сумму модулей элементов, расположенных ниже главной диагонали, не удастся вычислить, так как в этой позиции только один элемент." << endl;
+    }
+    else
+    {
+        sum = Sum_of_modules_below_the_main_diagonal(n, matrix);
+        cout << "Сумма модулей элементов, расположенных ниже главной диагонали: " << sum << endl;
     }
 }

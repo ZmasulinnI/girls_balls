@@ -5,7 +5,7 @@ double* outputconversion(int n, double* arr)
 {
     double* newArr = move_zeros_to_end(arr, n);
 
-    if (newArr != 0) 
+    if (newArr != 0)
     {
         Displaying_array_on_the_screen(arr, n);
         cout << "Массив после преобразования: ";
@@ -15,7 +15,7 @@ double* outputconversion(int n, double* arr)
         }
         cout << endl;
     }
-    
+
     cout << endl;
     return newArr;
 }

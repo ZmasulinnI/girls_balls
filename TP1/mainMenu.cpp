@@ -1,9 +1,11 @@
 #include "Function_Prototypes.h"
 #include "Libraries.h"
+#include <Windows.h>
 
 void mainMenu()
 {
-    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     char menu;
     while (true)
     {
